@@ -131,7 +131,7 @@ export default class WelcomeScreen extends React.Component{
 
       userLogin=async(id, password)=>{
         firebase.auth().signInWithEmailAndPassword(id, password).then(()=>{
-            alert('Succesfully Logged In')
+          this.props.navigation.navigate('Exchange')
         }).catch(()=>{
             alert('Unable to Login')
         })
