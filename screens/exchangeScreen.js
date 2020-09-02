@@ -25,7 +25,7 @@ export default class ExchangeScreen extends React.Component{
 
       getRequestedList=()=>{
           this.requestRef = db.collection('requests') .onSnapshot((snapshot)=>{
-            var requestedBooksList = snapshot.docs.map(document => document.data());
+            var requestedList = snapshot.docs.map(document => document.data());
             this.setState({
               requestedList : requestedList
             });
