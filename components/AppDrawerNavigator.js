@@ -2,7 +2,7 @@ import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import{createDrawerNavigator} from 'react-navigation-drawer'
 import { AppTabNavigator } from './AppTabNavigator'
-import {CustomSideBarMenu} from './CustomSidebarMenu'
+import CustomSideBarMenu from './CustomSidebarMenu'
 import SettingScreen from '../screens/settingScreen';
 
 
